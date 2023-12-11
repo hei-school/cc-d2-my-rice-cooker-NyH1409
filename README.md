@@ -19,19 +19,28 @@ Use a modern IDE (IntelliJ, Eclipse, VSCode...) if possible.
 - **Go**
 - We recommend using **Go >= 1.16.5**
 - To bootstrap the application, execute `go run main.go`
+- We use a linter in this app, follow this following link to setup : [Golang-lint](https://www.geeksforgeeks.org/how-to-install-golangci-lint/)
 
 - **Scala**
-- We recommend using **Scala >= 2.11.12**
-- Build and run the application: `dotnet build`, then `dotnet run`
+- We recommend using **Scala >= 2.11.12** : if you use IntelliJ, you can install the Scala plugin
+- Run the application: `scala main.scala`
 
 - **TypeScript**
 - We recommend using **Node.js >= 16.20.2**
-- Install the required package: `npm install prompt-sync`
-- Run the application: `node main.ts`
+- Install the required package: 
+  + `npm install prompt-sync` 
+  + `npm install -g typescript` 
+  + `npm i --save-dev @types/node` 
+  + `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript` 
+- Execute `tsc main.ts` to compile the code, this will generate a `.js` file 
+- Rename `.js` file to `.cjs`
+- Run the application: `node main.cjs`
+- Finally, you can the code formatting by `npx eslint .`
 
 - **Dart**
 - We recommend using **Dart >= 3.2.3**
 - Build and run the application: `dart main.dart`
+- Code formatting : `dart analyze`
 
 ## Standards
 Each programming language has its own set of standards, as outlined below for the four languages used in this application:
